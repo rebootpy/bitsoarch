@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://assets.bitso.com/favicons/favicon-16x16.png" />
+	<link rel="stylesheet" href="login.css">
+	<title>¡Exito!</title>
+</head>
+<body>
+	<header>
+		<div class="img">
+			<img src="https://bitso.com/logos/logo_dark.svg" alt="">
+		</div>
+		<div class="alineacion">
+			<input type="checkbox" id="btn-menu" />
+			<label for="btn-menu"><i class="fa fa-bars"></i></label>
+			<nav class="menu">
+				<ul>
+					<li><a href="#">Productos</a></li>
+					<li class="submenu"><a href="#">BTC 888,945.31 MXN <i class="fa fa-caret-down"></i></a>
+						<ul>
+							<li><a href="#">Ether 62,190,68 MXN</a></li>
+							<li><a href="#">XRP 16.5638 MXN</a></li>
+							<li><a href="#">Litecoin 2,438.19 MXN</a></li>
+							<li><a href="#">Bitcoin Cash 7,180.00 MXN</a></li>
+						</ul>
+					</li>
+					<li class="submenu"><a href="#">TrueUSD 20.03 MXN<i class="fa fa-caret-down"></i></a>
+						<ul>
+							<li><a href="#">Aave 163.11 MXN</a></li>
+							<li><a href="#">Cardano 1.1211 USD</a></li>
+							<li><a href="#">ApeCoin 12.7682 MXN</a></li>
+							<li><a href="#">Axie Infinity 69.26 USD</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="parti">
+		<div class="post">
+			<h1>¡Ya estas participando!</h1>
+		<p>EN LAS PROXIMAS HORAS TE NOTIFICAREMOS EL AVANCE DE LA CAMPAÑA.</p>
+		<img src="https://bitso.com/logos/logo_dark.svg" alt="">
+		</div>
+	</div>
+	<!--JQuery-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!--Funcion de la barra de Navegación-->
+	<script type="text/javascript">
+		$(".submenu").click(function(){
+			$(this).children("ul").slideToggle();
+		})
+
+		$("ul").click(function(ev){
+			ev.stopPropagation();
+		})
+	</script>
+	<style>
+		.parti {
+			padding-top: 150px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.post {
+			padding: 50px;
+			text-align: center;
+		}
+		.post h1 {
+			padding-bottom: 10px;
+		}
+		.post p {
+			padding-bottom: 50px;
+		}
+	</style>
+</body>
+</html>

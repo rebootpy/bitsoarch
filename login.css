@@ -1,0 +1,30 @@
+.formulario {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 100px;
+}
+form h1 {
+	text-transform: uppercase;
+	color: rgba(0,0,0,0.8);
+}
+form input {
+	margin-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 100px;
+	padding-left: 10px;
+	outline: none;
+	border-radius: 5px;
+	border: 1.5px solid rgba(0,0,0,0.5);
+}
+form button {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: none;
+	background-color: green;
+	border-radius: 5px;
+	opacity: 0.8;
+	color: #fff;
+}

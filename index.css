@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+header .img {
+  display: flex;
+  float: left;
+  justify-content: flex-start;
+}
+header img {
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 150px;
+}
+header {
+  width: 100%;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  height: 64px;
+  background: #fff;
+  color: #000;
+}
+.alineacion {
+  display: flex;
+  justify-content: flex-end;
+}
+#btn-menu {
+  display: none;
+}
+
+header label {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu ul {
+  background: #fff;
+  display: flex;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+
+  list-style: none;
+}
+
+.menu ul ul {
+  display: none;
+}
+
+.menu a {
+  display: block;
+  padding: 15px 20px;
+  color: #000;
+  text-decoration: none;
+  line-height: 32px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+.menu a:hover {
+  background: #2C3E50;
+}
+
+.menu a i {
+  margin-left: 10px;
+}
+
+.menu ul li:hover ul {
+  transition: all 0.3s ease;
+  display: block;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  header label {
+    display: block;
+    padding-top: 16px;
+    padding-right: 16px;
+    transition: all 0.4s ease;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 70%;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+  }
+  
+  .menu ul {
+    flex-direction: column;
+    //display: block;
+  }
+  
+  .menu ul li:hover ul {
+    display: none;
+    position: static;
+  }
+  
+  .menu a i {
+    position: absolute;
+    right: 16px;
+    line-height: 32px;
+  }
+  
+  #btn-menu:checked ~ .menu {
+    transform: translateX(0%);
+  }
+  
+}
+.header {
+  font-family: sans-serif;
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F236x%2F36%2F4c%2F94%2F364c948080639ffae504442634d64cfb.jpg&f=1&nofb=1');
+  width: 100%;
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.wrapper {
+  padding-right: 20px;
+  padding-left: 50px;
+}
+.static-text {
+  font-size: 40px;
+  font-weight: bold;
+}
+.static-text img {
+  width: 200px;
+}
+.static-text span {
+  color: orange;
+}
+.text-parrar {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+.letter {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+.button{
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  background-color: green;
+}
+.button a {
+  
+  color: #fff;
+}
+.estadistica {
+  padding: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.label {
+  padding: 10px;
+}
+@media (max-width: 858px) {
+  .grid {
+    grid-template-columns: 2fr 2fr;
+  }
+}
+.label h1{
+  color: green;
+  font-size: 20px;
+}
+
+.bitso {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cap {
+  padding: 30px;
+}
+.title-bitso {
+  font-size: 30px;
+}
+.opera {
+  padding-top: 30px;
+}
+.opera  #blue{
+  color: #fff;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 50%;
+  background-color: blue;
+}
+.opera  #yellow{
+  color: #fff;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+.opera  #red{
+  color: #fff;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 70%;
+  line-height: 30px;
+  background-color: pink;
+}
+.opera h1 {
+  padding-top: 5px;
+  font-size: 20px;
+  color: rgba(0,0,0,0.8);
+}
+.opera p {
+  font-size: 15px;
+}
+
+.intercambio {
+  padding: 30px;
+  background-color: #DFF3E4;
+}
+.titlw-inter {
+  color: rgba(0,0,0,0.8);
+  font-size: 12px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.subtitle-inter {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.parrafo-inter {
+  font-size: 15px;
+  color: rgba(0,0,0,0.7);
+  padding-bottom: 20px;
+}
+.img-sub {
+  padding: 5px;
+}
+.img-sub img {
+  width: 400px;
+}
+.intercambio img {
+  padding-bottom: 20px;
+  width: 400px;
+  border-radius: 20px;
+}
+footer {
+  padding: 30px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.foot {
+  padding-right: 20px;
+  width: 200px;
+}
+.foot h1 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: rgba(0,0,0,0.8);
+}
+.foot ul li {
+  list-style: none;
+}
+@media (max-width: 858px)  {
+  .footer {
+    grid-template-columns: 3fr;
+  }
+}
+.bitcoin {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(22, 26, 30);
+}
+.bitcoin h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.bitso-center {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cripto {
+  background-color: rgb(37, 44, 54);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+}
